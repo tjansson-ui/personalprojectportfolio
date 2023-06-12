@@ -143,7 +143,7 @@ a:-webkit-any-link {
     }
 
 
-/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+/* project shadow */
 .proj-column:hover,
 .proj-column:hover .proj-header, .spotlight:hover {
   box-shadow: inset 0px 0px 8px var(--textcolor), 0 0 15px var(--textcolor);
