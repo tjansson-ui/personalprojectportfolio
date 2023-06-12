@@ -1,0 +1,181 @@
+:root {
+    --textcolor: rgb(248, 241, 233);
+    --cardcolor: rgba(97, 15, 15, 0.705);
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    background-color: rgb(64, 75, 75);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--cardcolor);
+    color: var(--textcolor);
+    display: block;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+
+}
+
+nav ul {
+    margin-top: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px 0px 25px 10px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: var(--cardcolor);
+    color: bisque;
+    text-align: right;
+}
+
+main section {
+    margin: 10px 25px;
+    width: 75%;
+    float: right;
+    margin-left: 10px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.hero {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-image: url(../images/boats.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.readable {
+    background-color: var(--cardcolor);
+    color: var(--textcolor);
+    padding: 15px;
+}
+
+.spotlight {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100%;
+    color: var(--textcolor);
+    outline: 2px dashed rgb(134, 134, 231);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* project display grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+  }
+
+.proj-column {
+    flex: 1 0 40%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.proj-card {
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--textcolor);
+    outline: 2px dashed rgb(134, 134, 231);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.proj-header {
+    position: relative;
+    width: 50%;
+    margin-bottom: -4rem;
+    margin-left: -3rem;
+    padding: 0.5rem;
+    background-color: var(--cardcolor);
+    border: 2px solid navy;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    }
+
+
+/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.proj-column:hover,
+.proj-column:hover .proj-header, .spotlight:hover {
+  box-shadow: inset 0px 0px 8px var(--textcolor), 0 0 15px var(--textcolor);
+}
+
+
+
+footer {
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    display: block;
+}
+
+
+
+/* adjust size based on display */
+@media screen and (max-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .proj-column {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .proj-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+}
+  
