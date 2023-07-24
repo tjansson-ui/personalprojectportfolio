@@ -3,16 +3,16 @@
     --cardcolor: rgba(97, 15, 15, 0.705);
 }
 
-* {
+/* * { 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+*/
 body {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.25;
-    background-color: rgb(64, 75, 75);
+    background-color: rgb(208, 245, 245);
 }
-
+/*
 header {
     padding: 20px;
     background-color: var(--cardcolor);
@@ -46,11 +46,7 @@ nav ul {
 h2 {
     font-size: 30px;
     margin: 10px 0px 25px 10px;
-    padding: 20px;
     clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
     background-color: var(--cardcolor);
     color: bisque;
     text-align: right;
@@ -61,20 +57,20 @@ main section {
     width: 75%;
     float: right;
     margin-left: 10px;
-}
+} 
 
 a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
     color: var(--textcolor);
 }
-
-.avatar {
+*/
+ .avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin-right: 0.5rem;
-}
+} 
 
 .hero {
     height: 250px;
@@ -84,7 +80,7 @@ a:-webkit-any-link {
     background-size: cover;
     background-position: center;
 }
-
+/*
 .readable {
     background-color: var(--cardcolor);
     color: var(--textcolor);
@@ -105,12 +101,12 @@ a:-webkit-any-link {
 }
 
 /* project display grid */
-.row {
+/* .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: -1.5rem;
-  }
+  } 
 
 .proj-column {
     flex: 1 0 40%;
@@ -144,7 +140,7 @@ a:-webkit-any-link {
 
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.proj-column:hover,
+/* .proj-column:hover,
 .proj-column:hover .proj-header, .spotlight:hover {
   box-shadow: inset 0px 0px 8px var(--textcolor), 0 0 15px var(--textcolor);
 }
@@ -156,12 +152,11 @@ footer {
     clear: both;
     text-align: center;
     display: block;
-}
-
+} */
 
 
 /* adjust size based on display */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   header {
     width: 75%;
   }
@@ -177,5 +172,4 @@ footer {
       max-width: 100%;
     }
 
-}
-  
+} */

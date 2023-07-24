@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tor Jansson Code Portfolio</title>
   <link rel="stylesheet" href="./css/reset.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -18,74 +19,95 @@
       Tor Jansson
     </h1>
 
-    <nav>
-        <ul>
-            <li> <a href="#about-me">About Me</a> </li>
-            <li><a href="#projects">Projects</a> </li>
-            <li><a href="./projects/resume.html">Resume</a> </li>
-            <li><a href="./projects/contactme.html">Contact Me</a> </li>
-        </ul>
-      </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-absolute top-0 end-0">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#about-me" class="nav-link active" aria-current="page">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link active" aria-current="page" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects/resume.html">Resume</a> </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects/contactme.html">Contact Me</a> </li>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 <div class="hero"></div>
 
   <main >
+    <div class="container">
+      <div class="row align-items-start">
+        <h2 class = "col-2 readable" id="about-me">About Me</h2>
+        <section class = "col-10 readable">
+            <p>This is a portfolio of my recent and ongoing projects. It was created during the UW coding bootcamp in Summer 2023. </p> <br>
+            <p>I have decided to adjust the style to utilize bootstrap. I have updated the link to project 1 to reflect the project work during the UW bootcamp in 2023. If some of the style seems off then it is still an active work in progress. <p></p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quod eligendi! Vel aut quos soluta voluptas vero possimus totam deserunt numquam molestiae perferendis, nihil architecto commodi et quae doloremque quaerat. <br>
+            Quasi ipsum quas placeat vitae provident autem. Tenetur, consectetur corrupti? Libero adipisci repellat dolore fugiat veniam odio, nihil dolorem, iste ut numquam a? Magnam, quos! Eaque illo assumenda numquam obcaecati!</p>
+        </section>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row align-items-start">
+      <h2 class = "col-2 readable" id="projects">Projects</h2>
+        <section class="col-10 card">
+          <div class="proj-column card-body spotlight" >
+              <h3 class="proj-header">Project 1</h3>
+                <a class= "icon-link icon-link-hover" href="https://ricadbur.github.io/world-news/" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank"><img src="./images/NewsWorld.png" alt="my first project" width ="500"></a>
+              <p class = "card-text">
+                This was my first project for the bootcamp. <br><br>
     
-    <h2 class = "left-panel" id="about-me">About Me</h2>
-    <section class = "readable">
-        <p>This is a portfolio of my recent and ongoing projects. It was created during the UW coding bootcamp in Summer 2023. </p> <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quod eligendi! Vel aut quos soluta voluptas vero possimus totam deserunt numquam molestiae perferendis, nihil architecto commodi et quae doloremque quaerat. <br>
-        Quasi ipsum quas placeat vitae provident autem. Tenetur, consectetur corrupti? Libero adipisci repellat dolore fugiat veniam odio, nihil dolorem, iste ut numquam a? Magnam, quos! Eaque illo assumenda numquam obcaecati!</p>
-    </section>
-    
-    <h2 id="projects">Projects</h2>
-    <section>
-        <div class="proj-column proj-card spotlight" >
-            <h3 class="proj-header">Project 1</h3>
-            <div class="proj-body">
-              <a href="https://tjansson-ui.github.io/challenge01/" target="_blank"><img src="./images/firstproject.png" alt="my first project" width ="800"></a>
-            </div>
-        </div>
-        <p class = "readable">
-          This was my first project for the bootcamp. <br><br>
+                It is currently the only working project link on this page. The link is a live page hosted by github.
+              </p>
+          </div>
+        </section>
+        <section class="row">
+          <div class="col-5 card offset-2">
+            <div class="card-body">
+              <h3 class="proj-header">Project 2</h3>
+                <a href="#" target="_blank"><img src="./images/game.png" alt="fake game project" width="320"></a>
+              </div>
+          </div>
+          <div class="col-5 card">
+            <div class="card-body">
+              <h3 class="proj-header">Project 3</h3>
+                <a href="#" target="_blank"><img src="./images/rockpaper.png" alt="fake rock paper" width="320"></a>
+              </div>
+          </div>
+          <div class="col-5 card offset-2">
+            <div class="card-body">
+              <h3 class="proj-header">Project 4</h3>
+                <a href="#" target="_blank"><img src="./images/holiday.png" alt="fake holiday finder" width="320"></a>
+              </div>
+          </div>
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt! Suscipit numquam minima ea officia eius aliquid dicta cum enim vero! Ducimus dolorem accusantium inventore id expedita sint consequuntur sequi.
-          Esse assumenda provident at corrupti, vel atque, modi, alias voluptate voluptatibus doloribus quasi enim sequi odit veniam consequuntur nostrum. Laudantium expedita ad unde minima, sequi facere molestiae repellendus ipsa accusamus.
-          Quaerat itaque autem alias eius in dignissimos magnam voluptas libero? Alias veniam fugit omnis quis, aperiam laudantium eius tempore rem explicabo, voluptates excepturi adipisci! Veritatis voluptas sint cupiditate quae hic?
-        </p>
+          <div class="col-5 card">
+              <div class="card-body">
+              <h3 class="proj-header">Project 5</h3>
+                <a href="#" target="_blank"><img src="./images/movie.png" alt="fake movie recommendation engine" width="320"></a>
+              </div>
+          </div>
       </section>
-      <section class="row">
-        <div class="proj-column proj-card">
-            <h3 class="proj-header">Project 2</h3>
-            <div class="proj-body">
-              <a href="#" target="_blank"><img src="./images/game.png" alt="fake game project" width="320"></a>
-            </div>
-        </div>
-        <div class="proj-column proj-card">
-            <h3 class="proj-header">Project 3</h3>
-            <div class="proj-body">
-              <a href="#" target="_blank"><img src="./images/rockpaper.png" alt="fake rock paper" width="320"></a>
-            </div>
-        </div>
-        <div class="proj-column proj-card">
-            <h3 class="proj-header">Project 4</h3>
-            <div class="proj-body">
-              <a href="#" target="_blank"><img src="./images/holiday.png" alt="fake holiday finder" width="320"></a>
-            </div>
-        </div>
-
-        <div class="proj-column proj-card">
-            <h3 class="proj-header">Project 5</h3>
-            <div class="proj-body">
-              <a href="#" target="_blank"><img src="./images/movie.png" alt="fake movie recommendation engine" width="320"></a>
-            </div>
-        </div>
-    </section>
+    </div>
+  </div>
   </main>
 
   <footer class="readable">
     <h3>All CSS and HTML was coded in VSCode. Thanks for visiting!</h3>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 
